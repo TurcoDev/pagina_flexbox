@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con CSS</title>
+</head>
+<style>
+  form {
+    width: 40%;
+    border: 1px solid lightskyblue;
+  }
+
+  form div {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  #logo{
+    text-align: center;
+    border-bottom: 2px solid lightskyblue;
+  }
+
+  img {
+    width: 100px;
+  }
+
+  input[type="email"],
+  input[type="text"] {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-color: lightskyblue;
+    border-radius: 50px;
+    padding: 10px;
+  }
+
+  span {
+    color: blue;
+    font-style: italic;
+    font-size: 0.85em;
+  }
+
+  button{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-color: lightskyblue;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: lightskyblue;
+    color: white;
+    font-weight: bold;    
+  }
+
+</style>
+<body>
+  <form action="">
+    <div id="logo">
+      <img src="../img/circunferencia.png" alt="">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="email">
+    </div>
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+    </div>
+    <div>
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+    </div>
+    <div>
+      <label for="politicas">Políticas:</label>
+      <br>
+      <input type="checkbox" id="politicas" name="politicas"></input>
+      <span>Acepto las políticas de privacidad</span>
+    </div>
+    <div>
+      <button type="submit">Subscribirse</button>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+}
+
+h2{
+  text-align: center;
+}
+
+.contenedor-productos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarjeta{
+  border: 2px solid red;
+  border-radius: 20px;
+  width: 300px;
+  padding: 15px;
+  /* margin: 15px; */
+  background-color: #eadfdf82;
+  box-shadow: 5px 10px 10px #5c5b5b;
+}
+
+.tarjeta h4{
+  text-align: center;
+}
+
+.tarjeta img{
+  width: 100%;
+}
