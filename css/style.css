@@ -26,6 +26,9 @@ body {
 
 #header img{
   width: 64px;
+  animation-name: animated-logo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 #header h1 {
@@ -47,6 +50,12 @@ body {
   padding: 5px;
   margin: 10px;
   font-size: 1.5rem;
+  transition: all 0.5s ease;
+}
+
+#header ul li:hover {
+  color: aqua;
+  transform: rotate(-10deg) scale(1.5);
 }
 
 #main {
@@ -62,6 +71,12 @@ body {
 
 #main img{
   width: 40%;
+  box-shadow: 2px 2px 10px #000;
+  transition: all 0.5s ease;
+}
+
+#main img:hover {
+  width: 50%;
 }
 
 #main p {
@@ -95,4 +110,15 @@ body {
 #footer .redes a img {
   width: 1.5em;
   margin: 5px;
+}
+
+@keyframes animated-logo {
+  from {
+    transform: translateX(0);
+    /* opacity: 1; */
+  }
+  to {
+    transform: translateX(300px);
+    /* opacity: 0; */
+  }
 }
